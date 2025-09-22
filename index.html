@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operation tom servo heist</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>tom servo appreciation page</h1>
+        <p><em>mpkendall has the best cat</em></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#plan">examples</a></li>
+            <li><a href="#supplies">table</a></li>
+            <li><a href="#pics">image</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>about tom servo</h2>
+            <p>tom servo is this orange tabby that belongs to mpkendall. <strong>pretty cute tbh.</strong></p>
+            
+            <h3>html text stuff</h3>
+            <ul>
+                <li><b>bold text example</b></li>
+                <li><i>italic text here</i></li>
+                <li><u>underlined words</u></li>
+                <li><mark>highlighted text</mark></li>
+                <li><small>small text</small></li>
+                <li><del>old text</del> <ins>new text</ins></li>
+                <li>x<sup>2</sup> and h<sub>2</sub>o</li>
+            </ul>
+        </section>
+
+        <section id="plan">
+            <h2>random list examples</h2>
+            
+            <h3>ordered list</h3>
+            <ol>
+                <li>first thing</li>
+                <li>second thing</li>
+                <li>third thing</li>
+                <li>fourth thing</li>
+            </ol>
+
+            <h3>bullet points</h3>
+            <ul>
+                <li>item one</li>
+                <li>item two</li>
+                <li>item three</li>
+                <li>item four</li>
+            </ul>
+
+            <h4>definition list</h4>
+            <dl>
+                <dt>html</dt>
+                <dd>markup language for web pages</dd>
+                <dt>css</dt>
+                <dd>styling for websites</dd>
+            </dl>
+        </section>
+
+        <section id="supplies">
+            <h2>table example</h2>
+            <p>just a basic html table:</p>
+            
+            <table border="1">
+                <caption>sample data table</caption>
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>type</th>
+                        <th>status</th>
+                        <th>notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>project a</td>
+                        <td>website</td>
+                        <td>done</td>
+                        <td>looks good</td>
+                    </tr>
+                    <tr>
+                        <td>project b</td>
+                        <td>app</td>
+                        <td>working on it</td>
+                        <td>needs more work</td>
+                    </tr>
+                    <tr>
+                        <td>project c</td>
+                        <td>game</td>
+                        <td>planning</td>
+                        <td>just an idea</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="evidence">
+            <h2>tom servo pics</h2>
+            <figure>
+                <img src="tomservo.jpg" 
+                     alt="tom servo the orange cat" 
+                     width="700" 
+                     height="300">
+                <figcaption>tom servo</figcaption>
+            </figure>
+        </section>
+
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>contact form</legend>
+                    
+                    <label for="name">name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="email">email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="subject">what about:</label><br>
+                    <select id="subject" name="subject">
+                        <option value="cat">about the cat</option>
+                        <option value="deal">make a deal</option>
+                        <option value="other">something else</option>
+                    </select><br><br>
+                    
+                    <label for="message">message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" 
+                              placeholder="tell me about tom servo..."></textarea><br><br>
+                    
+                    <label>
+                        <input type="checkbox" name="newsletter"> 
+                        send me updates
+                    </label><br><br>
+                    
+                    <label>how to reply:</label><br>
+                    <input type="radio" id="email_contact" name="contact_method" value="email">
+                    <label for="email_contact">email</label><br>
+                    <input type="radio" id="phone_contact" name="contact_method" value="phone">
+                    <label for="phone_contact">phone</label><br><br>
+                    
+                    <input type="submit" value="send message">
+                    <input type="reset" value="clear form">
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h2>quote</h2>
+            <blockquote>
+                <p>"cats are nice"</p>
+                <cite>- me</cite>
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>code stuff</h2>
+            <p>here's some code:</p>
+            <pre><code>function getTomServo() {
+    console.log("hello tom servo");
+    return "meow";
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>interactive demo</h2>
+            <p>current step: <span id="plan-status">step 1</span></p>
+            <p>button clicks: <span id="visit-count">0</span></p>
+            <p>current time: <span id="time-until">loading...</span></p>
+            
+            <button onclick="changeStatus()">next step</button>
+            <button onclick="switchTheme()">dark mode</button>
+            <button onclick="hideTable()">hide table</button>
+            <button onclick="highlightStuff()">highlight things</button>
+        </section>
+    </main>
+
+    <aside>
+        <h3>links</h3>
+        <ul>
+            <li><a href="https://github.com/mpkendall" target="_blank" rel="noopener">mpkendall's github</a></li>
+            <li><a href="https://linkedin.com/in/mpkendall" target="_blank" rel="noopener">linkedin</a></li>
+            <li><a href="mailto:contact@mpkendall.com">email</a></li>
+            <li><a href="tel:+1234567890">phone</a></li>
+        </ul>
+        
+        <h4>updates</h4>
+        <p><time datetime="2025-09-21">september 21, 2025</time> - made this website</p>
+    </aside>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 my website about tom servo</p>
+        <address>
+            contact: <a href="mailto:hello@mpkendall.com">hello@mpkendall.com</a><br>
+            location: somewhere
+        </address>
+        <p><small>this website shows html stuff and cats</small></p>
+    </footer>
+</body>
+</html>
